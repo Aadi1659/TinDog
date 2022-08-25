@@ -1,0 +1,74 @@
+what is a responsive webiste?
+most ppl think that being responsive means that our webiste is fast and snappy, but that isnt the case
+responsive means that how well our webiste will work on different platforms like mobile, desktop and tablets.
+the webiste should change accordingly and provide the user the best experience.
+
+in bootstrap suppose we want to create some rows and columns similar to the airbnb webiste, 
+which has 4 columns in desktop, 3 in tablets, and 2 in phones.
+
+to acheive that responsiveness, what we can do is to specify the number of rows and columnswe need
+
+eg
+<div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: red; border:1px solid" >
+        col
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: red; border:1px solid" >
+        col
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: red; border:1px solid" >
+        col
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: red; border:1px solid" >
+        col
+    </div>
+</div>
+
+lg is for large, md is for medium and sm for small ie desktop, tablets and phones respectively
+
+the numbers 3, 4, 6 means how many columns to show up
+on the screen there are 12 columns, so 3 means 12/3 ie 4 to be shown on desktops and so on...
+
+or go to https://getbootstrap.com/docs/5.2/layout/grid/ for more grid system information
+
+what is a container?
+a container is a bootstrap element which can adapt itself automatically and become responsive.
+what it means is that it just holds the inner elements in position and as a whole becomes responsive automatically
+
+container-fluid is a better option to the regular container as it doesn'nt jump its width
+
+WHAT IS Z index?
+ 
+z index is the property of any element to define its order of stacking
+consider it like the z-axis of a body
+the higher the z-index, the higher its stacking
+note: z-index can be only implemented if the position of the body is not static
+
+
+media query
+media query is used for making our websites responsive
+it actually adds conditions to our CSS code
+syntax:
+@media<type>{input}
+
+
+what is code refactoring?
+code refactoring means making your code more and more readable and comprehendible by others
+the general priority order is
+first: readablity
+second: modularity
+third: efficiency
+fourth: length
+
+so we should focus the most in readablity and then the others
+
+the hiearchical order of reading elements in CSS is from right to left
+eg .container-fluid .title{
+    color:red;
+}
+it means to give title which is a class inside another class called container-fluid a red color.
+
+if we remove the space between thw two classes ie .container-fluid.title it means to look for an element 
+which has both the classes container-fluid and title.
+
+futhermore h1.container-fluid.title means an h1 which has the class container-fluid and class title
